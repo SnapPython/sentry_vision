@@ -35,6 +35,15 @@
 #include "auto_aim_interfaces/msg/target.hpp"
 #include "rm_decision_interfaces/msg/receive_serial.hpp"
 
+//behave tree
+#include "behaviortree_cpp/bt_factory.h"
+#include "behaviortree_cpp/action_node.h"
+#include "behaviortree_ros2/bt_action_node.hpp"
+#include "behaviortree_ros2/plugins.hpp"
+#include "behaviortree_ros2/bt_topic_sub_node.hpp"
+#include "behaviortree_cpp/loggers/groot2_publisher.h"
+
+
 namespace rm_decision{
 
 // struct ReceivePacket
@@ -62,6 +71,8 @@ namespace rm_decision{
 
 class Commander;
 
+
+
 class State {
 private:
 public:
@@ -85,6 +96,42 @@ public:
       attack = true;
     }
   }
+};
+
+class PatrolState : public State {
+  public:
+    explicit PatrolState(Commander* commander) : State(commander) {}
+    void handle() override;
+};
+
+class GoAndStayState : public State {
+  public:
+    explicit GoAndStayState(Commander* commander) : State(commander) {}
+    void handle() override;
+};
+
+class AttackState : public State {
+  public:
+    explicit AttackState(Commander* commander) : State(commander) {}
+    virtual void handle() override;
+};
+
+class WaitState : public State {
+  public:
+    explicit WaitState(Commander* commander) : State(commander) {}
+    virtual void handle() override;
+};
+
+class MoveState : public State {
+  public:
+    explicit MoveState(Commander* commander) : State(commander) {}
+    virtual void handle() override;
+};
+
+class CjState : public State {
+  public:
+    explicit CjState(Commander* commander) : State(commander) {}
+    virtual void handle() override;
 };
 
 
@@ -194,43 +241,61 @@ public:
   std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;
   // tf2_ros::Buffer buffer{get_clock()};
   // tf2_ros::TransformListener tflistener{buffer};
+
+  //this is used for bt
+  void testhandle(){
+    std::cout << "hello" << std::endl;
+    goal.header.stamp = this->now();
+    goal.header.frame_id = "map";
+    goal.pose.position.x = 1; //补血点坐标
+    goal.pose.position.y = 0;
+    goal.pose.position.z = 0.0;
+    goal.pose.orientation.x = 0.0;
+    goal.pose.orientation.y = 0.0;
+    goal.pose.orientation.z = 0.0;
+    goal.pose.orientation.w = 1.0;
+    setState(std::make_shared<GoAndStayState>(this));
+  }
+
+  void patrolhandle(){
+    std::cout << "patrolhandle is called" << std::endl;
+    setState(std::make_shared<PatrolState>(this));
+  }
+
+  BT::NodeStatus IfOrdered(){
+    std::cout << "ifOrdered is set to be true" << std::endl;
+    return BT::NodeStatus::SUCCESS;
+  }
+
+  BT::NodeStatus GoToPlace(){
+    std::cout << "GoToPlace is set ordered" << std::endl;
+    patrolhandle();
+    return BT::NodeStatus::SUCCESS;
+
+  }
+
+  BT::NodeStatus IfHighHp(){
+    return BT::NodeStatus::SUCCESS;
+
+  }
+
+  BT::NodeStatus GoAround(){
+    return BT::NodeStatus::SUCCESS;
+
+  }
+
+  BT::NodeStatus IfAddHpConditionOk(){
+    return BT::NodeStatus::SUCCESS;
+
+  }
+
+  BT::NodeStatus GoToBase(){
+    return BT::NodeStatus::SUCCESS;
+  }
+  //above is used for bt
 };
 
-class PatrolState : public State {
-  public:
-    explicit PatrolState(Commander* commander) : State(commander) {}
-    void handle() override;
-};
 
-class GoAndStayState : public State {
-  public:
-    explicit GoAndStayState(Commander* commander) : State(commander) {}
-    void handle() override;
-};
-
-class AttackState : public State {
-  public:
-    explicit AttackState(Commander* commander) : State(commander) {}
-    virtual void handle() override;
-};
-
-class WaitState : public State {
-  public:
-    explicit WaitState(Commander* commander) : State(commander) {}
-    virtual void handle() override;
-};
-
-class MoveState : public State {
-  public:
-    explicit MoveState(Commander* commander) : State(commander) {}
-    virtual void handle() override;
-};
-
-class CjState : public State {
-  public:
-    explicit CjState(Commander* commander) : State(commander) {}
-    virtual void handle() override;
-};
 
 
 }
