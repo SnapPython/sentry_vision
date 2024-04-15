@@ -4,33 +4,60 @@
   <BehaviorTree ID="main">
     <Fallback>
       <Sequence>
-        <IfOrdered/>
-        <GoToPlace/>
+        <dafu_ordered/>
+        <dafu_handle/>
       </Sequence>
       <Sequence>
-        <IfHighHp/>
-        <GoAround/>
+        <outpose_ordered/>
+        <outpose_handle/>
       </Sequence>
       <Sequence>
-        <IfAddHpConditionOk/>
-        <GoToBase/>
+        <base_ordered/>
+        <base_handle/>
       </Sequence>
+      <Sequence>
+        <IfAddHp/>
+        <addhp_handle/>
+      </Sequence>
+      <Sequence>
+        <IfDefend/>
+        <defend_handle/>
+      </Sequence>
+      <Sequence>
+        <IfAttack/>
+        <attack_handle/>
+      </Sequence>
+      <Guard/>
     </Fallback>
   </BehaviorTree>
 
   <!-- Description of Node Models (used by Groot) -->
   <TreeNodesModel>
-    <Action ID="GoAround"
+    <Action ID="Guard"
             editable="true"/>
-    <Action ID="GoToBase"
-            editable="true"/>
-    <Action ID="GoToPlace"
-            editable="true"/>
-    <Condition ID="IfAddHpConditionOk"
+    <Condition ID="IfAddHp"
                editable="true"/>
-    <Condition ID="IfHighHp"
+    <Condition ID="IfAttack"
                editable="true"/>
-    <Condition ID="IfOrdered"
+    <Condition ID="IfDefend"
+               editable="true"/>
+    <Action ID="addhp_handle"
+            editable="true"/>
+    <Action ID="attack_handle"
+            editable="true"/>
+    <Action ID="base_handle"
+            editable="true"/>
+    <Condition ID="base_ordered"
+               editable="true"/>
+    <Action ID="dafu_handle"
+            editable="true"/>
+    <Condition ID="dafu_ordered"
+               editable="true"/>
+    <Action ID="defend_handle"
+            editable="true"/>
+    <Action ID="outpose_handle"
+            editable="true"/>
+    <Condition ID="outpose_ordered"
                editable="true"/>
   </TreeNodesModel>
 

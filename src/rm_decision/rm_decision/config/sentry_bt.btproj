@@ -3,11 +3,21 @@
     <include path="sentry_bt.xml"/>
     <!-- Description of Node Models (used by Groot) -->
     <TreeNodesModel>
-        <Action ID="goAround" editable="true"/>
-        <Action ID="goToBase" editable="true"/>
-        <Action ID="goToPlace" editable="true"/>
-        <Condition ID="ifAddHpConditionOk" editable="true"/>
-        <Condition ID="ifHighHp" editable="true"/>
-        <Condition ID="ifOrdered" editable="true"/>
+        <Action ID="Guard" editable="true"/>
+        <Condition ID="IfAddHp" editable="true"/>
+        <Condition ID="IfAddHpConditionOk" editable="true"/>
+        <Condition ID="IfAttack" editable="true"/>
+        <Condition ID="IfDefend" editable="true"/>
+        <Condition ID="IfHighHp" editable="true"/>
+        <Condition ID="IfOrdered" editable="true"/>
+        <Action ID="addhp_handle" editable="true"/>
+        <Action ID="attack_handle" editable="true"/>
+        <Action ID="base_handle" editable="true"/>
+        <Condition ID="base_ordered" editable="true"/>
+        <Action ID="dafu_handle" editable="true"/>
+        <Condition ID="dafu_ordered" editable="true"/>
+        <Action ID="defend_handle" editable="true"/>
+        <Action ID="outpose_handle" editable="true"/>
+        <Condition ID="outpose_ordered" editable="true"/>
     </TreeNodesModel>
 </root>
