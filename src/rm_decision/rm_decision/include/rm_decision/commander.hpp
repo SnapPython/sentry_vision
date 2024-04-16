@@ -257,41 +257,101 @@ public:
     setState(std::make_shared<GoAndStayState>(this));
   }
 
-  void patrolhandle(){
+  void mydafu_handle(){
     std::cout << "patrolhandle is called" << std::endl;
     setState(std::make_shared<PatrolState>(this));
   }
+    void myoutpose_handle(){
+        std::cout << "patrolhandle is called" << std::endl;
+        setState(std::make_shared<PatrolState>(this));
+    }
+    void mybase_handle(){
+        std::cout << "patrolhandle is called" << std::endl;
+        setState(std::make_shared<PatrolState>(this));
+    }
+    void myaddhp_handle(){
+        std::cout << "patrolhandle is called" << std::endl;
+        setState(std::make_shared<PatrolState>(this));
+    }
+    void mydefend_handle(){
+        std::cout << "patrolhandle is called" << std::endl;
+        setState(std::make_shared<PatrolState>(this));
+    }
+    void myattack_handle(){
+        std::cout << "patrolhandle is called" << std::endl;
+        setState(std::make_shared<PatrolState>(this));
+    }
+    void myGuard_handle(){
+        std::cout << "patrolhandle is called" << std::endl;
+        setState(std::make_shared<PatrolState>(this));
+    }
 
-  BT::NodeStatus IfOrdered(){
-    std::cout << "ifOrdered is set to be true" << std::endl;
+    BT::NodeStatus dafu_ordered(){
     return BT::NodeStatus::SUCCESS;
   }
 
-  BT::NodeStatus GoToPlace(){
-    std::cout << "GoToPlace is set ordered" << std::endl;
-    patrolhandle();
+  BT::NodeStatus outpose_ordered(){
+    return BT::NodeStatus::SUCCESS;
+  }
+
+  BT::NodeStatus base_ordered(){
     return BT::NodeStatus::SUCCESS;
 
   }
 
-  BT::NodeStatus IfHighHp(){
+  BT::NodeStatus IfAddHp(){
     return BT::NodeStatus::SUCCESS;
 
   }
 
-  BT::NodeStatus GoAround(){
+  BT::NodeStatus IfDefend(){
     return BT::NodeStatus::SUCCESS;
 
   }
 
-  BT::NodeStatus IfAddHpConditionOk(){
-    return BT::NodeStatus::SUCCESS;
-
-  }
-
-  BT::NodeStatus GoToBase(){
+  BT::NodeStatus IfAttack(){
     return BT::NodeStatus::SUCCESS;
   }
+
+
+    BT::NodeStatus dafu_handle(){
+        mydafu_handle();
+        return BT::NodeStatus::SUCCESS;
+    }
+
+    BT::NodeStatus outpose_handle(){
+        myoutpose_handle();
+        return BT::NodeStatus::SUCCESS;
+
+    }
+
+    BT::NodeStatus base_handle(){
+        mybase_handle();
+        return BT::NodeStatus::SUCCESS;
+
+    }
+
+    BT::NodeStatus addhp_handle(){
+        myaddhp_handle();
+        return BT::NodeStatus::SUCCESS;
+
+    }
+
+    BT::NodeStatus defend_handle(){
+        mydefend_handle();
+        return BT::NodeStatus::SUCCESS;
+
+    }
+
+    BT::NodeStatus attack_handle(){
+        myattack_handle();
+        return BT::NodeStatus::SUCCESS;
+    }
+
+    BT::NodeStatus Guard_handle(){
+        myGuard_handle();
+        return BT::NodeStatus::SUCCESS;
+    }
   //above is used for bt
 };
 

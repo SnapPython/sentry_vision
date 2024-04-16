@@ -90,15 +90,25 @@ namespace rm_decision
 
    // 处理信息线程(设置状态）(now using behave tree)
    void Commander::decision(){
-      rclcpp::Rate r(5);
-      // behavetree init
-      BT::BehaviorTreeFactory factory;
-      factory.registerSimpleCondition("IfOrdered", std::bind(&Commander::IfOrdered, this));
-      factory.registerSimpleCondition("IfHighHp", std::bind(&Commander::IfHighHp, this));
-      factory.registerSimpleCondition("IfAddHpConditionOk", std::bind(&Commander::IfAddHpConditionOk, this));
-      factory.registerSimpleAction("GoToPlace", std::bind(&Commander::GoToPlace, this));
-      factory.registerSimpleAction("GoAround", std::bind(&Commander::GoAround, this));
-      factory.registerSimpleAction("GoToBase", std::bind(&Commander::GoToBase, this));
+        rclcpp::Rate r(5);
+        // behavetree init
+        BT::BehaviorTreeFactory factory;
+        factory.registerSimpleCondition("dafu_ordered", std::bind(&Commander::dafu_ordered, this));
+        factory.registerSimpleCondition("outpose_ordered", std::bind(&Commander::outpose_ordered, this));
+        factory.registerSimpleCondition("base_ordered", std::bind(&Commander::base_ordered, this));
+        factory.registerSimpleCondition("IfAddHp", std::bind(&Commander::IfAddHp, this));
+        factory.registerSimpleCondition("IfDefend", std::bind(&Commander::IfDefend, this));
+        factory.registerSimpleCondition("IfAttack", std::bind(&Commander::IfAttack, this));
+
+
+        factory.registerSimpleAction("dafu_handle", std::bind(&Commander::dafu_handle, this));
+        factory.registerSimpleAction("outpose_handle", std::bind(&Commander::outpose_handle, this));
+        factory.registerSimpleAction("base_handle", std::bind(&Commander::base_handle, this));
+        factory.registerSimpleAction("addhp_handle", std::bind(&Commander::addhp_handle, this));
+        factory.registerSimpleAction("defend_handle", std::bind(&Commander::defend_handle, this));
+        factory.registerSimpleAction("attack_handle", std::bind(&Commander::attack_handle, this));
+        factory.registerSimpleAction("Guard", std::bind(&Commander::Guard_handle, this));
+
       auto tree = factory.createTreeFromFile("./src/rm_decision/rm_decision/config/sentry_bt.xml"); //official
       // auto tree = factory.createTreeFromFile("./rm_decision/config/sentry_bt.xml");  //for test
       BT::Groot2Publisher publisher(tree);
