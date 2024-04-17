@@ -100,7 +100,6 @@ namespace rm_decision
         factory.registerSimpleCondition("IfDefend", std::bind(&Commander::IfDefend, this));
         factory.registerSimpleCondition("IfAttack", std::bind(&Commander::IfAttack, this));
 
-
         factory.registerSimpleAction("dafu_handle", std::bind(&Commander::dafu_handle, this));
         factory.registerSimpleAction("outpose_handle", std::bind(&Commander::outpose_handle, this));
         factory.registerSimpleAction("base_handle", std::bind(&Commander::base_handle, this));
@@ -110,69 +109,12 @@ namespace rm_decision
         factory.registerSimpleAction("Guard", std::bind(&Commander::Guard_handle, this));
 
       auto tree = factory.createTreeFromFile("./src/rm_decision/rm_decision/config/sentry_bt.xml"); //official
-      // auto tree = factory.createTreeFromFile("./rm_decision/config/sentry_bt.xml");  //for test
+      // auto tree = factory.createTreeFromFile("./rm_decision/config/sentry_bt.xml");  //for debug
       BT::Groot2Publisher publisher(tree);
        while (rclcpp::ok())
       { 
          std::cout << "behavetree is working now" << std::endl;
          tree.tickWhileRunning();
-         // // 读取信息
-         // if(time < 299){
-         //    if((self_7.hp <= 300 || buxue || (time >= 220 && self_7.hp <= 400)) && time <= 240 && !(buxue && (time - start) > 10) ){//残血逃离
-         //       goal.header.stamp = this->now();
-         //       goal.header.frame_id = "map";
-         //       goal.pose.position.x = -2.45; //补血点坐标
-         //       goal.pose.position.y = 2.95;
-         //       goal.pose.position.z = 0.0;
-         //       goal.pose.orientation.x = 0.0;
-         //       goal.pose.orientation.y = 0.0;
-         //       goal.pose.orientation.z = 0.0;
-         //       goal.pose.orientation.w = 1.0;
-         //       setState(std::make_shared<GoAndStayState>(this));
-         //       RCLCPP_INFO(this->get_logger(), "补血");
-         //       if (!buxue) start = time;
-         //       buxue = true;
-         //       if (self_7.hp >= 550) {
-         //          buxue = false;
-         //       }
-
-         //    }
-         //    if(time <= 80 ){
-         //       goal.header.stamp = this->now();
-         //       goal.header.frame_id = "map";
-         //       goal.pose.position.x = 0.8; //stand
-         //       goal.pose.position.y = 2.95;
-         //       goal.pose.position.z = 0.0;
-         //       goal.pose.orientation.x = 0.0;
-         //       goal.pose.orientation.y = 0.0;
-         //       goal.pose.orientation.z = 0.0;
-         //       goal.pose.orientation.w = 1.0;
-         //       setState(std::make_shared<GoAndStayState>(this));
-         //       RCLCPP_INFO(this->get_logger(), "graud");
-         //    }
-            
-            
-         //    // else if(time >= 70 && event_data == 0 && self_7.hp >= 500){
-         //    //    setState(std::make_shared<PatrolState>(this));
-               
-         //    //    RCLCPP_INFO(this->get_logger(), "占完回防等待");
-         //    // }
-         //    // else if(time >= 50 || event_data != 0){
-         //    //    setState(std::make_shared<MoveState>(this));
-         //    //    RCLCPP_INFO(this->get_logger(), "占领增益点");
-         //    // }
-         
-         //    else {
-         //       setState(std::make_shared<PatrolState>(this));
-         //       RCLCPP_INFO(this->get_logger(), "家里逛逛");
-
-         //    }
-         // }
-         // else{
-         //    setState(std::make_shared<WaitState>(this));
-         //    RCLCPP_INFO(this->get_logger(), "等待比赛开始");
-         // }
-         // if ((time - start) > 20) buxue = false;
           r.sleep();
       }
 
@@ -187,10 +129,6 @@ namespace rm_decision
          getcurrentpose();
          currentState->handle();
          RCLCPP_INFO(this->get_logger(), "time: %lf",time);
-         // RCLCPP_INFO(this->get_logger(), "1");
-         // if(auto nextState = currentState->check()){
-         //    setState(nextState.value());
-         // }
          r.sleep();
       }
    }
@@ -207,10 +145,7 @@ namespace rm_decision
       auto goal_msg = nav2_msgs::action::NavigateToPose::Goal();
       goal_msg.pose = goal_pose;
       goal_msg.behavior_tree = "";
-
       send_goal_future = nav_to_pose_client->async_send_goal(goal_msg,send_goal_options);
-   
-
    }
 
    // 请求反馈
@@ -414,12 +349,8 @@ namespace rm_decision
 
    // 追击模式
    void AttackState::handle() {
-      if(commander->distence(commander->enemypose) >= 1.0){
-         commander->nav_to_pose(commander->enemypose);
-         RCLCPP_INFO(commander->get_logger(), "敌方距离: %.2f,开始追击",commander->distence(commander->enemypose));
-         
-      }
-      else commander->nav_to_pose(commander->currentpose);
+      commander->nav_to_pose(commander->enemypose);
+      RCLCPP_INFO(commander->get_logger(), "敌方距离: %.2f,开始追击",commander->distence(commander->enemypose));
    }
    // 等待模式
    void WaitState::handle() {

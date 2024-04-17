@@ -218,6 +218,15 @@ public:
 
   //声明全局变量
   // ReceivePacket packet;
+
+  //for bt 
+  bool dafu = false;
+  bool outpose = false;
+  bool base = false;
+  float self_hp;
+  float self_ammo;
+  float self_base;
+
   private:
   
   rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr nav_to_pose_client;
@@ -243,11 +252,12 @@ public:
   // tf2_ros::TransformListener tflistener{buffer};
 
   //this is used for bt
-  void testhandle(){
-    std::cout << "hello" << std::endl;
+
+  void mydafu_handle(){
+    std::cout << "dafu_handle is called" << std::endl;
     goal.header.stamp = this->now();
     goal.header.frame_id = "map";
-    goal.pose.position.x = 1; //补血点坐标
+    goal.pose.position.x = 0; 
     goal.pose.position.y = 0;
     goal.pose.position.z = 0.0;
     goal.pose.orientation.x = 0.0;
@@ -256,61 +266,120 @@ public:
     goal.pose.orientation.w = 1.0;
     setState(std::make_shared<GoAndStayState>(this));
   }
-
-  void mydafu_handle(){
-    std::cout << "patrolhandle is called" << std::endl;
-    setState(std::make_shared<PatrolState>(this));
-  }
     void myoutpose_handle(){
-        std::cout << "patrolhandle is called" << std::endl;
-        setState(std::make_shared<PatrolState>(this));
+        std::cout << "outpose_handle is called" << std::endl;
+        goal.header.stamp = this->now();
+        goal.header.frame_id = "map";
+        goal.pose.position.x = 0; 
+        goal.pose.position.y = 0;
+        goal.pose.position.z = 0.0;
+        goal.pose.orientation.x = 0.0;
+        goal.pose.orientation.y = 0.0;
+        goal.pose.orientation.z = 0.0;
+        goal.pose.orientation.w = 1.0;
+        setState(std::make_shared<GoAndStayState>(this));
     }
     void mybase_handle(){
-        std::cout << "patrolhandle is called" << std::endl;
-        setState(std::make_shared<PatrolState>(this));
+        std::cout << "base_handle is called" << std::endl;
+        goal.header.stamp = this->now();
+        goal.header.frame_id = "map";
+        goal.pose.position.x = 0; 
+        goal.pose.position.y = 0;
+        goal.pose.position.z = 0.0;
+        goal.pose.orientation.x = 0.0;
+        goal.pose.orientation.y = 0.0;
+        goal.pose.orientation.z = 0.0;
+        goal.pose.orientation.w = 1.0;
+        setState(std::make_shared<GoAndStayState>(this));
     }
     void myaddhp_handle(){
-        std::cout << "patrolhandle is called" << std::endl;
-        setState(std::make_shared<PatrolState>(this));
+        std::cout << "addhp_handle is called" << std::endl;
+        goal.header.stamp = this->now();
+        goal.header.frame_id = "map";
+        goal.pose.position.x = 0; 
+        goal.pose.position.y = 0;
+        goal.pose.position.z = 0.0;
+        goal.pose.orientation.x = 0.0;
+        goal.pose.orientation.y = 0.0;
+        goal.pose.orientation.z = 0.0;
+        goal.pose.orientation.w = 1.0;
+        setState(std::make_shared<GoAndStayState>(this));
     }
     void mydefend_handle(){
-        std::cout << "patrolhandle is called" << std::endl;
-        setState(std::make_shared<PatrolState>(this));
+        std::cout << "defend_handle is called" << std::endl;
+        goal.header.stamp = this->now();
+        goal.header.frame_id = "map";
+        goal.pose.position.x = 0; 
+        goal.pose.position.y = 0;
+        goal.pose.position.z = 0.0;
+        goal.pose.orientation.x = 0.0;
+        goal.pose.orientation.y = 0.0;
+        goal.pose.orientation.z = 0.0;
+        goal.pose.orientation.w = 1.0;
+        setState(std::make_shared<GoAndStayState>(this));
     }
     void myattack_handle(){
-        std::cout << "patrolhandle is called" << std::endl;
-        setState(std::make_shared<PatrolState>(this));
+        std::cout << "attack_handle is called" << std::endl;
+        setState(std::make_shared<AttackState>(this));
     }
     void myGuard_handle(){
-        std::cout << "patrolhandle is called" << std::endl;
+        std::cout << "Guard_handle is called" << std::endl;
         setState(std::make_shared<PatrolState>(this));
     }
 
     BT::NodeStatus dafu_ordered(){
-    return BT::NodeStatus::SUCCESS;
+    if (dafu) {
+      return BT::NodeStatus::SUCCESS;
+    }
+    else {
+      return BT::NodeStatus::FAILURE;
+    }
+    
   }
 
   BT::NodeStatus outpose_ordered(){
-    return BT::NodeStatus::SUCCESS;
+    if (outpose) {
+      return BT::NodeStatus::SUCCESS;
+    }
+    else {
+      return BT::NodeStatus::FAILURE;
+    }
   }
 
   BT::NodeStatus base_ordered(){
-    return BT::NodeStatus::SUCCESS;
-
+    if (outpose) {
+      return BT::NodeStatus::SUCCESS;
+    }
+    else {
+      return BT::NodeStatus::FAILURE;
+    }
   }
 
   BT::NodeStatus IfAddHp(){
-    return BT::NodeStatus::SUCCESS;
-
+    if (self_hp <= 150 || self_ammo < 50) {
+      return BT::NodeStatus::SUCCESS;
+    }
+    else {
+      return BT::NodeStatus::FAILURE;
+    }
   }
 
   BT::NodeStatus IfDefend(){
+    if(self_base <= 150){
     return BT::NodeStatus::SUCCESS;
-
+    }
+    else {
+    return BT::NodeStatus::FAILURE;
+    }
   }
 
   BT::NodeStatus IfAttack(){
-    return BT::NodeStatus::SUCCESS;
+    if(self_hp >= 200 && distence(enemypose) <= 3.0){
+      return BT::NodeStatus::SUCCESS;
+    }
+    else {
+      return BT::NodeStatus::FAILURE;
+    }
   }
 
 
