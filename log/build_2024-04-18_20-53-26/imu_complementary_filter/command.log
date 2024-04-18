@@ -1,4 +1,0 @@
-Invoking command in '/home/mechax/ylh/sentry_vision/build/imu_complementary_filter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/imu_complementary_filter -- -j16 -l16
-Invoked command in '/home/mechax/ylh/sentry_vision/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/imu_complementary_filter -- -j16 -l16
-Invoking command in '/home/mechax/ylh/sentry_vision/build/imu_complementary_filter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/imu_complementary_filter
-Invoked command in '/home/mechax/ylh/sentry_vision/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/imu_complementary_filter
