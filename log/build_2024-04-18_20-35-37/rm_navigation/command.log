@@ -1,0 +1,6 @@
+Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_navigation -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/rm_navigation
+Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_navigation -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/rm_navigation
+Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_navigation -- -j16 -l16
+Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_navigation -- -j16 -l16
+Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_navigation
+Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_navigation

@@ -1,0 +1,11 @@
+{
+  "package_name": "rm_decision_interfaces",
+  "non_idl_tuples": [
+    "/home/mechax/ylh/sentry_vision/src/rm_decision/rm_decision_interfaces:msg/AllRobotHP.msg",
+    "/home/mechax/ylh/sentry_vision/src/rm_decision/rm_decision_interfaces:msg/Armor.msg",
+    "/home/mechax/ylh/sentry_vision/src/rm_decision/rm_decision_interfaces:msg/FriendLocation.msg",
+    "/home/mechax/ylh/sentry_vision/src/rm_decision/rm_decision_interfaces:msg/RFID.msg",
+    "/home/mechax/ylh/sentry_vision/src/rm_decision/rm_decision_interfaces:msg/RobotStatus.msg",
+    "/home/mechax/ylh/sentry_vision/src/rm_decision/rm_decision_interfaces:msg/ReceiveSerial.msg"
+  ]
+}

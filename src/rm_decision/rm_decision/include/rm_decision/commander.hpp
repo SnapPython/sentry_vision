@@ -161,8 +161,6 @@ public:
 
   void getcurrentpose();
 
-  bool ifattack();
-  
   // double timer();
 
   geometry_msgs::msg::PoseStamped currentpose;
@@ -216,8 +214,6 @@ public:
   bool tracking = false;
   bool buxue = false;
 
-  //声明全局变量
-  // ReceivePacket packet;
 
   //for bt 
   bool dafu = false;
@@ -226,6 +222,7 @@ public:
   float self_hp;
   float self_ammo;
   float self_base;
+  int nav_state;  //1 for SUCCEEDED 2 for ABORTED 3 for CANCELED 4 for RUNNING
 
   private:
   
@@ -347,7 +344,7 @@ public:
   }
 
   BT::NodeStatus base_ordered(){
-    if (outpose) {
+    if (base) {
       return BT::NodeStatus::SUCCESS;
     }
     else {
@@ -385,48 +382,89 @@ public:
 
     BT::NodeStatus dafu_handle(){
         mydafu_handle();
-        return BT::NodeStatus::SUCCESS;
+        if(nav_state == 1){
+          return BT::NodeStatus::SUCCESS;
+        }
+        else if(nav_state == 4){
+          return BT::NodeStatus::RUNNING;
+        }
+        else {
+          return BT::NodeStatus::FAILURE;
+        }
     }
 
     BT::NodeStatus outpose_handle(){
         myoutpose_handle();
-        return BT::NodeStatus::SUCCESS;
-
+        if(nav_state == 1){
+            return BT::NodeStatus::SUCCESS;
+        }
+        else if(nav_state == 4){
+            return BT::NodeStatus::RUNNING;
+        }
+        else {
+            return BT::NodeStatus::FAILURE;
+        }
     }
 
     BT::NodeStatus base_handle(){
         mybase_handle();
-        return BT::NodeStatus::SUCCESS;
-
+        if(nav_state == 1){
+            return BT::NodeStatus::SUCCESS;
+        }
+        else if(nav_state == 4){
+            return BT::NodeStatus::RUNNING;
+        }
+        else {
+            return BT::NodeStatus::FAILURE;
+        }
     }
 
     BT::NodeStatus addhp_handle(){
         myaddhp_handle();
-        return BT::NodeStatus::SUCCESS;
-
+        if(nav_state == 1){
+            return BT::NodeStatus::SUCCESS;
+        }
+        else if(nav_state == 4){
+            return BT::NodeStatus::RUNNING;
+        }
+        else {
+            return BT::NodeStatus::FAILURE;
+        }
     }
 
     BT::NodeStatus defend_handle(){
         mydefend_handle();
-        return BT::NodeStatus::SUCCESS;
-
+        if(nav_state == 1){
+            return BT::NodeStatus::SUCCESS;
+        }
+        else if(nav_state == 4){
+            return BT::NodeStatus::RUNNING;
+        }
+        else {
+            return BT::NodeStatus::FAILURE;
+        }
     }
 
     BT::NodeStatus attack_handle(){
         myattack_handle();
-        return BT::NodeStatus::SUCCESS;
+        if(nav_state == 1){
+            return BT::NodeStatus::SUCCESS;
+        }
+        else if(nav_state == 4){
+            return BT::NodeStatus::RUNNING;
+        }
+        else {
+            return BT::NodeStatus::FAILURE;
+        }
     }
 
     BT::NodeStatus Guard_handle(){
         myGuard_handle();
         return BT::NodeStatus::SUCCESS;
-    }
+  }
+
   //above is used for bt
 };
-
-
-
-
 }
 
 #endif // RM_DECISION__COMMANDER_HPP_

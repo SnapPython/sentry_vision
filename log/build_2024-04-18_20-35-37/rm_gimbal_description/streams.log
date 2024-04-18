@@ -1,0 +1,50 @@
+[0.090s] Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_gimbal_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_gimbal_description -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/rm_gimbal_description
+[1.703s] -- The C compiler identification is GNU 11.4.0
+[1.703s] -- The CXX compiler identification is GNU 11.4.0
+[1.703s] -- Detecting C compiler ABI info
+[1.703s] -- Detecting C compiler ABI info - done
+[1.703s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.703s] -- Detecting C compile features
+[1.703s] -- Detecting C compile features - done
+[1.703s] -- Detecting CXX compiler ABI info
+[1.703s] -- Detecting CXX compiler ABI info - done
+[1.703s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.703s] -- Detecting CXX compile features
+[1.704s] -- Detecting CXX compile features - done
+[1.704s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.704s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.704s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.704s] -- Added test 'lint_cmake' to check CMake code style
+[1.704s] -- Added test 'xmllint' to check XML markup files
+[1.704s] -- Configuring done
+[1.704s] -- Generating done
+[1.704s] -- Build files have been written to: /home/mechax/ylh/sentry_vision/build/rm_gimbal_description
+[1.704s] [33mCMake Warning:
+[1.704s]   Manually-specified variables were not used by the project:
+[1.704s] 
+[1.704s]     CMAKE_EXPORT_COMPILE_COMMANDS
+[1.704s] 
+[1.704s] [0m
+[1.710s] Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_gimbal_description -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/rm_gimbal_description
+[1.710s] Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_gimbal_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_gimbal_description -- -j16 -l16
+[4.191s] Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_gimbal_description -- -j16 -l16
+[4.513s] Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_gimbal_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_gimbal_description
+[4.544s] -- Install configuration: ""
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/urdf
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/ament_index/resource_index/package_run_dependencies/rm_gimbal_description
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/ament_index/resource_index/parent_prefix_path/rm_gimbal_description
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.sh
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.dsv
+[4.544s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.sh
+[4.551s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.dsv
+[4.551s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.bash
+[4.552s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.sh
+[4.552s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.zsh
+[4.552s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.dsv
+[4.552s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/package.dsv
+[4.552s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/ament_index/resource_index/packages/rm_gimbal_description
+[4.553s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig.cmake
+[4.553s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig-version.cmake
+[4.553s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_gimbal_description/share/rm_gimbal_description/package.xml
+[4.621s] Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_gimbal_description

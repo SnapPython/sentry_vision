@@ -1,0 +1,48 @@
+[0.035s] Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_auto_aim': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker/lib:/home/mechax/ylh/sentry_vision/install/armor_detector/lib:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_auto_aim/rm_auto_aim -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/rm_auto_aim
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.112s] -- The CXX compiler identification is GNU 11.4.0
+[0.117s] -- Detecting C compiler ABI info
+[0.165s] -- Detecting C compiler ABI info - done
+[0.170s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.170s] -- Detecting C compile features
+[0.170s] -- Detecting C compile features - done
+[0.172s] -- Detecting CXX compiler ABI info
+[0.228s] -- Detecting CXX compiler ABI info - done
+[0.234s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.234s] -- Detecting CXX compile features
+[0.234s] -- Detecting CXX compile features - done
+[0.236s] -- Found ament_cmake_auto: 1.3.6 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.544s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.624s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.683s] -- Added test 'lint_cmake' to check CMake code style
+[0.684s] -- Added test 'xmllint' to check XML markup files
+[0.686s] -- Configuring done
+[0.690s] -- Generating done
+[0.690s] [33mCMake Warning:
+[0.690s]   Manually-specified variables were not used by the project:
+[0.690s] 
+[0.690s]     CMAKE_EXPORT_COMPILE_COMMANDS
+[0.690s] 
+[0.690s] [0m
+[0.690s] -- Build files have been written to: /home/mechax/ylh/sentry_vision/build/rm_auto_aim
+[0.694s] Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_auto_aim' returned '0': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker/lib:/home/mechax/ylh/sentry_vision/install/armor_detector/lib:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_auto_aim/rm_auto_aim -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/rm_auto_aim
+[0.695s] Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_auto_aim': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker/lib:/home/mechax/ylh/sentry_vision/install/armor_detector/lib:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_auto_aim -- -j16 -l16
+[0.723s] Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_auto_aim' returned '0': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker/lib:/home/mechax/ylh/sentry_vision/install/armor_detector/lib:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_auto_aim -- -j16 -l16
+[0.738s] Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_auto_aim': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker/lib:/home/mechax/ylh/sentry_vision/install/armor_detector/lib:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_auto_aim
+[0.743s] -- Install configuration: ""
+[0.743s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/ament_index/resource_index/package_run_dependencies/rm_auto_aim
+[0.743s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/ament_index/resource_index/parent_prefix_path/rm_auto_aim
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/environment/ament_prefix_path.sh
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/environment/ament_prefix_path.dsv
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/environment/path.sh
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/environment/path.dsv
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/local_setup.bash
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/local_setup.sh
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/local_setup.zsh
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/local_setup.dsv
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/package.dsv
+[0.744s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/ament_index/resource_index/packages/rm_auto_aim
+[0.745s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/cmake/rm_auto_aimConfig.cmake
+[0.745s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/cmake/rm_auto_aimConfig-version.cmake
+[0.745s] -- Installing: /home/mechax/ylh/sentry_vision/install/rm_auto_aim/share/rm_auto_aim/package.xml
+[0.746s] Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_auto_aim' returned '0': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker:/home/mechax/ylh/sentry_vision/install/armor_detector:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/armor_tracker/lib:/home/mechax/ylh/sentry_vision/install/armor_detector/lib:/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_auto_aim

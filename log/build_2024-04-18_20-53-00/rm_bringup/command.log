@@ -1,0 +1,4 @@
+Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_bringup -- -j16 -l16
+Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/rm_bringup -- -j16 -l16
+Invoking command in '/home/mechax/ylh/sentry_vision/build/rm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_bringup
+Invoked command in '/home/mechax/ylh/sentry_vision/build/rm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/rm_bringup

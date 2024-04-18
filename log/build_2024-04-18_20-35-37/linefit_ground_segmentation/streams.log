@@ -1,0 +1,120 @@
+[0.255s] Invoking command in '/home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation
+[0.353s] -- The C compiler identification is GNU 11.4.0
+[0.444s] -- The CXX compiler identification is GNU 11.4.0
+[0.457s] -- Detecting C compiler ABI info
+[0.554s] -- Detecting C compiler ABI info - done
+[0.564s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.564s] -- Detecting C compile features
+[0.565s] -- Detecting C compile features - done
+[0.569s] -- Detecting CXX compiler ABI info
+[0.684s] -- Detecting CXX compiler ABI info - done
+[0.694s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.695s] -- Detecting CXX compile features
+[0.698s] -- Detecting CXX compile features - done
+[0.700s] -- Found ament_cmake_auto: 1.3.6 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.425s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.752s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.759s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.768s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.785s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.810s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.865s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.867s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.971s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.004s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.070s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.084s] -- Looking for pthread.h
+[2.210s] -- Looking for pthread.h - found
+[2.211s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.376s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.378s] -- Found Threads: TRUE  
+[4.020s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.035s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.035s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.793s] -- Checking for module 'eigen3'
+[5.889s] --   Found eigen3, version 3.4.0
+[6.198s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[6.198s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.325s] -- Checking for module 'flann'
+[6.432s] --   Found flann, version 1.9.1
+[6.755s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[6.755s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[12.980s] -- Checking for module 'libusb-1.0'
+[13.081s] --   Found libusb-1.0, version 1.0.25
+[13.564s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[13.566s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.142s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[14.673s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[14.705s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.736s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[15.410s] -- Found Qhull version 8.0.2
+[16.106s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[16.767s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[16.794s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[16.798s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[16.800s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[16.803s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[16.806s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[16.806s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[16.807s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[16.835s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[16.838s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[16.841s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[16.869s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[16.872s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[16.875s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[16.878s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[16.910s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[16.913s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[16.917s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[16.920s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[16.956s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[16.958s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[16.959s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[16.959s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[16.963s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[16.966s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[17.410s] -- Configuring done
+[17.540s] -- Generating done
+[17.566s] -- Build files have been written to: /home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation
+[17.761s] Invoked command in '/home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation
+[17.762s] Invoking command in '/home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation -- -j16 -l16
+[18.066s] [ 20%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/bin.cc.o[0m
+[18.105s] [ 40%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/segment.cc.o[0m
+[18.106s] [ 60%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/ground_segmentation.cc.o[0m
+[18.136s] [ 80%] [32mBuilding CXX object CMakeFiles/linefit_ground_segmentation.dir/src/viewer.cc.o[0m
+[35.994s] [100%] [32m[1mLinking CXX shared library liblinefit_ground_segmentation.so[0m
+[37.174s] [100%] Built target linefit_ground_segmentation
+[37.190s] Invoked command in '/home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation -- -j16 -l16
+[37.256s] Invoking command in '/home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation
+[37.269s] -- Install configuration: ""
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include/ground_segmentation
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include/ground_segmentation/typedefs.h
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include/ground_segmentation/bin.h
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include/ground_segmentation/viewer.h
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include/ground_segmentation/ground_segmentation.h
+[37.269s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/include/ground_segmentation/segment.h
+[37.270s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/library_path.sh
+[37.270s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/library_path.dsv
+[37.270s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/lib/liblinefit_ground_segmentation.so
+[37.272s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/lib/liblinefit_ground_segmentation.so" to ""
+[37.272s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/ament_index/resource_index/package_run_dependencies/linefit_ground_segmentation
+[37.272s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/ament_index/resource_index/parent_prefix_path/linefit_ground_segmentation
+[37.272s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/ament_prefix_path.sh
+[37.272s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/ament_prefix_path.dsv
+[37.272s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/path.sh
+[37.273s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/environment/path.dsv
+[37.273s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.bash
+[37.273s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.sh
+[37.273s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.zsh
+[37.273s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/local_setup.dsv
+[37.273s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.dsv
+[37.274s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/ament_index/resource_index/packages/linefit_ground_segmentation
+[37.274s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_dependencies-extras.cmake
+[37.274s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_include_directories-extras.cmake
+[37.274s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/ament_cmake_export_libraries-extras.cmake
+[37.274s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/linefit_ground_segmentationConfig.cmake
+[37.274s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/cmake/linefit_ground_segmentationConfig-version.cmake
+[37.275s] -- Installing: /home/mechax/ylh/sentry_vision/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.xml
+[37.283s] Invoked command in '/home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/linefit_ground_segmentation

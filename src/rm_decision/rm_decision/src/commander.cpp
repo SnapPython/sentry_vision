@@ -174,18 +174,22 @@ namespace rm_decision
       switch (result.code) {
          case rclcpp_action::ResultCode::SUCCEEDED:
             RCLCPP_INFO(this->get_logger(),"Goal was reached!");
+            nav_state = 1;
             checkgoal = true;
             break;
          case rclcpp_action::ResultCode::ABORTED:
             RCLCPP_INFO(this->get_logger(),"Goal was aborted");
+            nav_state = 2;
             checkgoal = true;
             break;
          case rclcpp_action::ResultCode::CANCELED:
             RCLCPP_INFO(this->get_logger(),"Goal was canceled");
+            nav_state = 3;
             checkgoal = true;
             break;
          default:
             RCLCPP_INFO(get_logger(),"Unknown result code");
+            nav_state = 4;
             checkgoal = true;
             break;
       }
@@ -253,14 +257,6 @@ namespace rm_decision
       return 600;
    }
 
-   //是否出击
-   bool Commander::ifattack() {
-         //联盟赛出击条件 自身血量大于某值 坐标小于某值 敌方血量小于某值）
-      if(self_7.hp >= 200 && enemyhp() <= 100 && currentpose.pose.position.x <= 4.5 && distence(enemypose) <= 3.0)
-         return true;
-      else
-         return false;
-   }
 
    
    // 订阅回调

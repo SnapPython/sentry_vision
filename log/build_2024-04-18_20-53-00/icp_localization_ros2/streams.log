@@ -1,0 +1,57 @@
+[0.205s] Invoking command in '/home/mechax/ylh/sentry_vision/build/icp_localization_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/icp_localization_ros2 -- -j16 -l16
+[0.336s] [35m[1mConsolidate compiler generated dependencies of target icp_localization[0m
+[0.504s] [100%] Built target icp_localization
+[0.732s] Invoked command in '/home/mechax/ylh/sentry_vision/build/icp_localization_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/icp_localization_ros2 -- -j16 -l16
+[1.003s] Invoking command in '/home/mechax/ylh/sentry_vision/build/icp_localization_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/icp_localization_ros2
+[1.087s] -- Install configuration: ""
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/common
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/common/output.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/common/math.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/common/assert.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/common/time.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/common/typedefs.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/helpers.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/RangeDataAccumulator.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/Parameters.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/FrameTracker.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/ImuInterpolationBuffer.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/ImuReading.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/TwistIntegrationBufferRos.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/TfPublisher.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/TwistIntegrationBuffer.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/math.hpp
+[1.088s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/ImuTracker.hpp
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/TransformInterpolationBuffer.hpp
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/Twist.hpp
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/transform/RigidTransform.hpp
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/include/icp_localization_ros2/ICPlocalization.hpp
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/lib/icp_localization_ros2/icp_localization
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/launch
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/launch/bringup.launch.py
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/config
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/config/node_params.yaml
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/config/input_filters_velodyne_puck.yaml
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/config/input_filters_ouster_os1.yaml
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/config/icp.yaml
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/config/plane_noisy.pcd
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/ament_index/resource_index/package_run_dependencies/icp_localization_ros2
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/ament_index/resource_index/parent_prefix_path/icp_localization_ros2
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/environment/ament_prefix_path.sh
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/environment/ament_prefix_path.dsv
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/environment/path.sh
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/environment/path.dsv
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/local_setup.bash
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/local_setup.sh
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/local_setup.zsh
+[1.089s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/local_setup.dsv
+[1.089s] -- Installing: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/package.dsv
+[1.090s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/ament_index/resource_index/packages/icp_localization_ros2
+[1.090s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.090s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.090s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/cmake/icp_localization_ros2Config.cmake
+[1.090s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/cmake/icp_localization_ros2Config-version.cmake
+[1.090s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/icp_localization_ros2/share/icp_localization_ros2/package.xml
+[1.175s] Invoked command in '/home/mechax/ylh/sentry_vision/build/icp_localization_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/icp_localization_ros2

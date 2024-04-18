@@ -1,0 +1,347 @@
+[0.198s] Invoking command in '/home/mechax/ylh/sentry_vision/build/fast_lio': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_localization/fast_lio -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/fast_lio
+[0.301s] -- The C compiler identification is GNU 11.4.0
+[0.407s] -- The CXX compiler identification is GNU 11.4.0
+[0.419s] -- Detecting C compiler ABI info
+[0.548s] -- Detecting C compiler ABI info - done
+[0.554s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.554s] -- Detecting C compile features
+[0.555s] -- Detecting C compile features - done
+[0.558s] -- Detecting CXX compiler ABI info
+[0.679s] -- Detecting CXX compiler ABI info - done
+[0.689s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.689s] -- Detecting CXX compile features
+[0.690s] -- Detecting CXX compile features - done
+[0.691s] [0mCurrent CPU archtecture: x86_64[0m
+[0.706s] [0mProcesser number:  16[0m
+[0.706s] [0mcore for MP: 3[0m
+[1.273s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[1.275s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.861s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.005s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[2.060s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.067s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.079s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.099s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.190s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.192s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.288s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.323s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.378s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.386s] -- Looking for pthread.h
+[2.453s] -- Looking for pthread.h - found
+[2.454s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.519s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.520s] -- Found Threads: TRUE  
+[2.632s] -- Found rclcpp_components: 16.0.7 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.679s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.710s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.769s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.828s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.840s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.926s] -- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+[3.120s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.121s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.121s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.351s] -- Checking for module 'eigen3'
+[3.365s] --   Found eigen3, version 3.4.0
+[3.401s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.401s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.429s] -- Checking for module 'flann'
+[3.443s] --   Found flann, version 1.9.1
+[3.516s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[3.516s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[5.014s] -- Checking for module 'libusb-1.0'
+[5.046s] --   Found libusb-1.0, version 1.0.25
+[5.133s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[5.135s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.265s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.545s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.562s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.578s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.003s] -- Found Qhull version 8.0.2
+[6.464s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.066s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[7.071s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[7.090s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[7.095s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[7.099s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[7.103s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[7.104s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[7.104s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[7.125s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[7.129s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[7.132s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[7.136s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[7.156s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[7.160s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[7.163s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[7.167s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[7.170s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[7.190s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[7.194s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[7.198s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[7.200s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[7.200s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[7.220s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[7.223s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[7.227s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[7.284s] -- Found livox_ros_driver2: 1.0.0 (/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[7.761s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.778s] [33mCMake Warning (dev) at CMakeLists.txt:80 (find_package):
+[7.778s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[7.778s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[7.778s]   command to set the policy and suppress this warning.
+[7.779s] 
+[7.779s]   CMake variable PCL_ROOT is set to:
+[7.779s] 
+[7.779s]     /usr
+[7.779s] 
+[7.779s]   For compatibility, CMake is ignoring the variable.
+[7.779s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[7.779s] [0m
+[7.820s] [0mEigen:/usr/include/eigen3[0m
+[7.821s] -- PCL: /usr/include/pcl-1.12
+[8.640s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[9.358s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.642s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.700s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[9.703s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[9.755s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[9.756s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.756s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[9.757s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[9.808s] -- Found PythonExtra: .so  
+[9.966s] -- Configuring done
+[10.102s] -- Generating done
+[10.111s] -- Build files have been written to: /home/mechax/ylh/sentry_vision/build/fast_lio
+[10.193s] Invoked command in '/home/mechax/ylh/sentry_vision/build/fast_lio' returned '0': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mechax/ylh/sentry_vision/src/rm_localization/fast_lio -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/mechax/ylh/sentry_vision/install/fast_lio
+[10.194s] Invoking command in '/home/mechax/ylh/sentry_vision/build/fast_lio': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/fast_lio -- -j16 -l16
+[10.335s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[10.922s] [  2%] Built target fast_lio__cpp
+[10.974s] [  2%] Built target ament_cmake_python_copy_fast_lio
+[11.009s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.555s] [  8%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o[0m
+[12.243s] [ 11%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so[0m
+[12.326s] [ 11%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[12.661s] running egg_info
+[12.663s] creating fast_lio.egg-info
+[12.683s] writing fast_lio.egg-info/PKG-INFO
+[12.684s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[12.685s] writing top-level names to fast_lio.egg-info/top_level.txt
+[12.685s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[12.745s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[12.746s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[12.828s] [ 11%] Built target ament_cmake_python_build_fast_lio_egg
+[12.843s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.365s] [ 17%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o[0m
+[13.994s] [ 20%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.164s] [ 20%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[14.179s] [ 22%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[14.617s] [ 25%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[15.052s] [ 28%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so[0m
+[15.119s] [ 28%] Built target fast_lio__rosidl_typesupport_cpp
+[15.137s] [ 31%] [34m[1mGenerating C code for ROS interfaces[0m
+[15.682s] [ 34%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o[0m
+[15.848s] [ 37%] [32m[1mLinking C shared library libfast_lio__rosidl_generator_c.so[0m
+[15.924s] [ 37%] Built target fast_lio__rosidl_generator_c
+[15.965s] [ 40%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o[0m
+[21.252s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[21.252s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[21.252s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[21.252s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[21.253s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[21.253s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[21.253s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions.h:72[m[K,
+[21.253s]                  from [01m[K/home/mechax/ylh/sentry_vision/src/rm_localization/fast_lio/src/IMU_Processing.hpp:18[m[K,
+[21.253s]                  from [01m[K/home/mechax/ylh/sentry_vision/src/rm_localization/fast_lio/src/laserMapping.cpp:47[m[K:
+[21.254s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[21.254s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[21.254s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[79.470s] [ 45%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[79.470s] [ 45%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o[0m
+[84.709s] [ 48%] [32m[1mLinking CXX executable fastlio_mapping[0m
+[85.546s] [ 48%] Built target fastlio_mapping
+[85.553s] [ 57%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[85.553s] [ 57%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[85.553s] [ 57%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[85.739s] [ 60%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[85.752s] [ 62%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o[0m
+[85.755s] [ 65%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o[0m
+[85.760s] [ 68%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so[0m
+[85.788s] [ 68%] Built target fast_lio__rosidl_typesupport_c
+[85.792s] [ 71%] [32m[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so[0m
+[85.813s] [ 71%] Built target fast_lio__rosidl_typesupport_introspection_c
+[85.965s] [ 74%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so[0m
+[86.024s] [ 74%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[86.047s] [ 74%] Built target fast_lio
+[86.069s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[86.348s] [ 77%] Built target fast_lio__py
+[86.363s] [ 80%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o[0m
+[86.460s] [ 82%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so[0m
+[86.491s] [ 82%] Built target fast_lio__rosidl_generator_py
+[86.506s] [ 91%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[86.506s] [ 91%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[86.506s] [ 91%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o[0m
+[86.577s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[86.577s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[86.577s] [100%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[86.600s] [100%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[86.600s] [100%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[86.600s] [100%] Built target fast_lio__rosidl_typesupport_c__pyext
+[86.610s] Invoked command in '/home/mechax/ylh/sentry_vision/build/fast_lio' returned '0': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mechax/ylh/sentry_vision/build/fast_lio -- -j16 -l16
+[86.653s] Invoking command in '/home/mechax/ylh/sentry_vision/build/fast_lio': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/fast_lio
+[86.658s] -- Install configuration: "Release"
+[86.659s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[86.659s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio
+[86.659s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg
+[86.659s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[86.659s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c
+[86.659s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/library_path.sh
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[86.660s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[86.661s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[86.661s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio
+[86.661s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg
+[86.661s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[86.661s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[86.661s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[86.661s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[86.662s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[86.662s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio
+[86.662s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[86.662s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[86.662s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio
+[86.662s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg
+[86.662s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[86.662s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[86.662s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[86.663s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio
+[86.663s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[86.663s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[86.663s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[86.663s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[86.663s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio
+[86.663s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg
+[86.663s] -- Up-to-date: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[86.663s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[86.663s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[86.664s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[86.664s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[86.693s] Listing '/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[86.693s] Compiling '/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[86.693s] Listing '/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[86.693s] Compiling '/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[86.693s] Compiling '/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[86.696s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[86.697s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[86.697s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[86.697s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[86.697s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[86.697s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[86.697s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[86.697s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[86.697s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[86.697s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[86.697s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/lib/fast_lio/fastlio_mapping
+[86.699s] -- Set runtime path of "/home/mechax/ylh/sentry_vision/install/fast_lio/lib/fast_lio/fastlio_mapping" to ""
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/config
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/config/horizon.yaml
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/config/avia.yaml
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/config/mid360.yaml
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[86.699s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch/mapping_horizon.launch
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch/mapping_velodyne.launch
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch/mapping_avia.launch
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/launch/mapping_ouster64.launch
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/rviz
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/path.sh
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/environment/path.dsv
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/local_setup.bash
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/local_setup.sh
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/local_setup.zsh
+[86.700s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/local_setup.dsv
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/package.dsv
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[86.701s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[86.702s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[86.703s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[86.703s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[86.703s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[86.703s] -- Installing: /home/mechax/ylh/sentry_vision/install/fast_lio/share/fast_lio/package.xml
+[86.705s] Invoked command in '/home/mechax/ylh/sentry_vision/build/fast_lio' returned '0': AMENT_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mechax/ylh/sentry_vision/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mechax/ylh/sentry_vision/build/fast_lio
